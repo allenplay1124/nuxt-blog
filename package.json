@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-blog",
+  "version": "1.0.0",
+  "description": "My funkadelic Nuxt.js project",
+  "author": "Allenplay",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "cross-env": "^5.2.0",
+    "muse-ui": "^3.0.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "nodemon": "^1.11.0",
+    "prettier": "1.14.3"
+  }
+}
