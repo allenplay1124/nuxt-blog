@@ -4,7 +4,7 @@ module.exports = {
   mode: 'universal',
   env: {
     baseUrl: 'https://api.allenplay.net/wp-json/'
-  }
+  },
   /*
   ** Headers of the page
   */
@@ -31,13 +31,15 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~/static/display.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/muse-ui.js'
+    '~/plugins/muse-ui.js',
+    '~/plugins/axios.js',
   ],
 
   /*
