@@ -1,4 +1,4 @@
-import axios from '~/plugin/axios'
+import axios from '~/plugins/axios.js'
 
 export const state = () => ({
   siteName: '',
@@ -8,7 +8,7 @@ export const state = () => ({
 
 export const mutations = {
   setSiteName (state, name) {
-    state.siteName = mame
+    state.siteName = name
   },
   setSiteDescription(state, description)
   {
@@ -17,5 +17,14 @@ export const mutations = {
 }
 
 export const actions = {
-  nuxtServerInit({commit})
+  async nuxtServerInit({commit}) {
+    let res = await axios.get('/')
+    commit('setSiteName', res.data.name)
+    commit('setSiteDescription', res.data.description)
+  }
+}
+
+export const getters = {
+  siteName: state => state.siteName,
+  siteDescription: state => state.siteDescription,
 }
