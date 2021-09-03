@@ -1,0 +1,11 @@
+.dark-mode-bar {
+    input {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .dark-mode-label-hover {
+        display: none;
+    }
+}
