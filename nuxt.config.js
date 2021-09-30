@@ -21,11 +21,14 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    { src: '~/assets/scss/index.scss', lang: 'scss'}
+    { src: '~/assets/scss/index.scss', lang: 'scss'},
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    // https://github.com/surmon-china/vue-awesome-swiper
+    // https://github.com/surmon-china/surmon-china.github.io/tree/source/projects/vue-awesome-swiper/nuxt
+    { src: '~/plugins/carousel', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -50,9 +53,9 @@ export default {
   },
   
   tailwindcss: {
-    jit: true,
+    jit: false,
     // add '~tailwind.config` alias
-    exposeConfig: true
+    exposeConfig: true,
   },
 
   colorMode: {
