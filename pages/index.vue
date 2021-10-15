@@ -21,40 +21,39 @@ export default {
                 isSlider: true,
                 isOnline: true,
             })
-            .sortBy("createdAt", "desc")
-            .fetch();
+            .sortBy('createdAt', 'desc')
+            .fetch()
 
         const topData = await $content('articles')
             .only(['title', 'summary', 'tags', 'image'])
             .where({
                 isTop: true,
-                isOnline: true
+                isOnline: true,
             })
             .sortBy('createdAt', 'desc')
             .limit(2)
             .fetch()
-        
+
         const newPosts = await $content('articles')
             .only(['title', 'createdAt', 'summary', 'tags', 'image'])
             .where({
-                isOnline: true
+                isOnline: true,
             })
             .sortBy('createdAt', 'desc')
             .limit(8)
             .fetch()
-        console.log(newPosts);
+        console.log(newPosts)
         return {
             carouselData,
             topData,
-            newPosts
+            newPosts,
         }
     },
     components: {
         carousel,
         featured,
         newPost,
-        footbar
+        footbar,
     },
-
 }
 </script>
