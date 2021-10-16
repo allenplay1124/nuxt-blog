@@ -13,16 +13,21 @@ module.exports = {
     },
     variants: {
         extend: {
-            divideColor: ['group-hover'],
-            backgroundColor: ['group-hover'],
-            boxShadow: ['group-hover'],
-            fontSize: ['group-hover'],
-            backgroundSize: ['group-hover'],
-            scale: ['group-hover'],
-            backgroundPosition: ['group-hover'],
-            transition: ['group-hover'],
-            translate: ['group-hover'],
+            divideColor: ['group-hover', 'hover'],
+            backgroundColor: ['group-hover', 'hover'],
+            boxShadow: ['group-hover', 'hover'],
+            fontSize: ['group-hover', 'hover'],
+            backgroundSize: ['group-hover', 'hover'],
+            scale: ['group-hover', 'hover'],
+            backgroundPosition: ['group-hover', 'hover'],
+            transition: ['group-hover', 'hover'],
+            translate: ['group-hover', 'hover'],
         },
     },
     plugins: [],
+    purge: {
+        content: [
+            'content/**/**.md'
+        ]
+    }
 }
