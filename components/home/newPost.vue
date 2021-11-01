@@ -88,7 +88,9 @@
                                     rounded-full
                                 "
                             >
-                                {{ tag }}
+                                <nuxt-link :to="tag.path">
+                                    {{ tag.title }}
+                                </nuxt-link>
                             </div>
                         </div>
                     </div>

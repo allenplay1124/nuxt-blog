@@ -54,7 +54,9 @@
                                     rounded-full
                                 "
                             >
-                                {{ item2 }}
+                                <nuxt-link :to="item2.path">
+                                    {{ item2.title }}
+                                </nuxt-link>
                             </div>
                         </div>
                     </div>

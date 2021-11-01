@@ -15,7 +15,7 @@ import footbar from '~/components/home/footbar'
 
 export default {
     async asyncData({ $content }) {
-        const carouselData = await $content('articles')
+        let carouselData = await $content('articles')
             .only(['title', 'summary', 'image'])
             .where({
                 isSlider: true,
@@ -24,7 +24,7 @@ export default {
             .sortBy('createdAt', 'desc')
             .fetch()
 
-        const topData = await $content('articles')
+        let posts = await $content('articles')
             .only(['title', 'summary', 'tags', 'image'])
             .where({
                 isTop: true,
@@ -34,7 +34,29 @@ export default {
             .limit(2)
             .fetch()
 
-        const newPosts = await $content('articles')
+        let topData = []
+        for (var item of posts) {
+            var post = new Object()
+
+            post.title = await item.title
+            post.summary = await item.summary
+            post.image = await item.image
+            post.slug = await item.slug
+            post.path = await item.path
+            post.createdAt = await item.createdAt
+
+            post.tags = []
+
+            for (var tag of item.tags) {
+                const tagItem = await $content('tags', tag).fetch()
+
+                post.tags.push(tagItem)
+            }
+
+            topData.push(post)
+        }
+
+        posts = await $content('articles')
             .only(['title', 'createdAt', 'summary', 'tags', 'image'])
             .where({
                 isOnline: true,
@@ -42,7 +64,28 @@ export default {
             .sortBy('createdAt', 'desc')
             .limit(8)
             .fetch()
-        console.log(newPosts)
+        
+        let newPosts = []
+        for (var item of posts) {
+            var post = new Object()
+
+            post.title = await item.title
+            post.summary = await item.summary
+            post.image = await item.image
+            post.slug = await item.slug
+            post.path = await item.path
+            post.createdAt = await item.createdAt
+
+            post.tags = []
+            for (var tag of item.tags) {
+                const tagItem = await $content('tags', tag).fetch()
+
+                post.tags.push(tagItem)
+            }
+
+            newPosts.push(post)
+        }
+
         return {
             carouselData,
             topData,
