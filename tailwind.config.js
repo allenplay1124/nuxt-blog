@@ -1,8 +1,21 @@
 module.exports = {
-    purge: [],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {},
+        screens: {
+            //小手機
+            'xs': '576px',
+            //大螢幕手機
+            'sm': '640px',
+            //平板
+            'md': '768px',
+            //一般螢幕
+            'lg': '992px',
+            //大螢幕
+            'xl': '1200px',
+            //高解析度螢幕
+            '2xl': '1400px',
+        },
         theme: {
             backgroundSize: {
                 auto: 'auto',
