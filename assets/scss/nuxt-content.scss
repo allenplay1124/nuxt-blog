@@ -28,6 +28,7 @@
         border-spacing: 0;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        color: #333;
     }
 
     th {
@@ -56,5 +57,21 @@
     /*最後欄第一列：右下*/
     tr:last-child td:last-child {
         border-bottom-right-radius: 12px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    pre {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: #00c3ff;
     }
 }
