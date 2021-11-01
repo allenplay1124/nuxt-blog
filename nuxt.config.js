@@ -30,6 +30,8 @@ export default {
     // https://github.com/surmon-china/vue-awesome-swiper
     // https://github.com/surmon-china/surmon-china.github.io/tree/source/projects/vue-awesome-swiper/nuxt
     { src: '~/plugins/carousel', ssr: false },
+
+    { src: '~/plugins/disqus', ssr: true },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
