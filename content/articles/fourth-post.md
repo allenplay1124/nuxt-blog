@@ -1,5 +1,5 @@
 ---
-title: 第一篇文章
+title: 第4篇文章
 summary: 這是第一篇文章簡述，將顯示於首頁
 image: /images/first-post/cover.jpg
 isSlider: true
@@ -8,7 +8,8 @@ isOnline: true
 tags:
     - php
     - laravel
-    - vue.js
+    - vue
+category: life
 ---
 
 ## 這是副標題
@@ -24,7 +25,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, iusto? Debitis ver
     phpinfo();
 ```
 
-![alt 測試圖片](images/first-post/cover.jpg)
+![alt 測試圖片](/images/first-post/cover.jpg)
 
 這是 <a href="https://www.google.com" title="測試連結">測試連結</a>
 
