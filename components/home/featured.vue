@@ -1,7 +1,7 @@
 <template>
     <section class="text-center p-10 bg-blue-100 dark:bg-gray-800">
         <h2 class="text-5xl py-10 dark:text-gray-100">精選文章</h2>
-        <div class="lg:container m-auto py-5">
+        <div class="lg:container m-auto py-5 lg:px-10">
             <div
                 class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-20"
             >

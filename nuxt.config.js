@@ -2,6 +2,11 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  loading: {
+    color: 'blue',
+    height: '5px'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '艾玩不累格',
@@ -45,6 +50,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://github.com/nuxt-community/fontawesome-module#readme
     '@nuxtjs/fontawesome',
+    //https://github.com/ivodolenc/nuxt-gsap-module
+    'nuxt-gsap-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,7 +62,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  
+
   tailwindcss: {
     jit: false,
     // add '~tailwind.config` alias
@@ -74,4 +81,8 @@ export default {
       regular: true
     }
   },
+
+  gsap: {
+    /* Module Options */
+  }
 }

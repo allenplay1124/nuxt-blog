@@ -1,7 +1,7 @@
 <template>
     <section class="bg-indigo-300 dark:bg-blue-900 p-10">
         <h3 class="text-center text-5xl dark:text-gray-100 py-5">最新文章</h3>
-        <div class="lg:container m-auto py-5">
+        <div class="lg:container m-auto py-5 lg:px-10">
             <div
                 class="grid gap-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1"
             >

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <carousel :data="carouselData"></carousel>
-        <featured :top-data="topData"></featured>
+        <carousel></carousel>
+        <!-- <featured :top-data="topData"></featured> -->
         <new-post :new-posts="newPosts"></new-post>
         <footbar></footbar>
     </div>
@@ -14,7 +14,8 @@ import newPost from '~/components/home/newPost'
 import footbar from '~/components/home/footbar'
 
 export default {
-    async asyncData({ $content }) {
+    async asyncData({ $content, store }) {
+        store.commit('setLoading', true)
         let carouselData = await $content('articles')
             .only(['title', 'summary', 'image'])
             .where({
@@ -64,7 +65,7 @@ export default {
             .sortBy('createdAt', 'desc')
             .limit(8)
             .fetch()
-        
+
         let newPosts = []
         for (var item of posts) {
             var post = new Object()
@@ -85,7 +86,7 @@ export default {
 
             newPosts.push(post)
         }
-
+        store.commit('setLoading', false)
         return {
             carouselData,
             topData,
