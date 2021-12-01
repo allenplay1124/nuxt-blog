@@ -21,6 +21,26 @@
                         hover:scale-110
                     "
                 >
+                    <div 
+                        class="
+                            text-center
+                            absolute
+                            top-0
+                            right-0
+                            font-extrabold
+                            bg-blue-500
+                            dark:text-gray-100
+                            group-hover:bg-opacity-75
+                            dark:group-hover:bg-yellow-600
+                            m-auto
+                            rounded-tr-md
+                            rounded-bl-xl
+                            p-2
+                        ">
+                        <nuxt-link :to="item.category.path">
+                            {{ item.category.title }}
+                        </nuxt-link>
+                    </div>
                     <nuxt-link :to="item.path">
                         <img
                             class="object-cover rounded-t-md"
@@ -37,8 +57,8 @@
                             absolute
                             bg-blue-500
                             text-gray-100
-                            top-5
-                            left-5
+                            top-40
+                            left-2
                             group-hover:bg-opacity-75
                             dark:group-hover:bg-yellow-600
                         "
@@ -84,8 +104,8 @@
                                     bg-blue-400
                                     dark:bg-yellow-500
                                     text-gray-100
-                                    p-2
-                                    rounded-full
+                                    p-1
+                                    rounded-3xl
                                 "
                             >
                                 <nuxt-link :to="tag.path">

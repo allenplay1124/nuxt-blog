@@ -1,6 +1,6 @@
 <template>
     <div>
-        <carousel></carousel>
+        <carousel :categories="categories"></carousel>
         <!-- <featured :top-data="topData"></featured> -->
         <new-post :new-posts="newPosts"></new-post>
         <footbar></footbar>
@@ -58,7 +58,7 @@ export default {
         }
 
         posts = await $content('articles')
-            .only(['title', 'createdAt', 'summary', 'tags', 'image'])
+            .only(['title', 'createdAt', 'summary', 'tags', 'image', 'slug', 'category'])
             .where({
                 isOnline: true,
             })
@@ -69,7 +69,7 @@ export default {
         let newPosts = []
         for (var item of posts) {
             var post = new Object()
-
+            console.log(item);
             post.title = await item.title
             post.summary = await item.summary
             post.image = await item.image
@@ -83,14 +83,18 @@ export default {
 
                 post.tags.push(tagItem)
             }
-
+            post.category = await $content('categories', item.category).fetch()
             newPosts.push(post)
         }
+
+        let categories = await $content('categories').fetch()
+
         store.commit('setLoading', false)
         return {
             carouselData,
             topData,
             newPosts,
+            categories,
         }
     },
     components: {

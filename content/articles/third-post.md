@@ -9,7 +9,7 @@ tags:
     - php
     - laravel
     - vue
-categroy: os
+category: os
 ---
 
 ## 這是副標題

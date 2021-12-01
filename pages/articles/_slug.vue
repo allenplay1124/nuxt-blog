@@ -10,11 +10,20 @@
                     <hr class="mt-10" />
                     <div class="mb-10 mt-3 dark:text-gray-50">
                         <fa :icon="['far', 'calendar']" />
+                        
                         {{
                             postData.createdAt
                                 .substring(0, 19)
                                 .replace('T', ' ')
                         }}
+                        
+                        &nbsp;&nbsp;
+
+                        <fa :icon="['far', 'folder-open']" />
+
+                        <nuxt-link :to="postData.category.path">
+                            {{ postData.category.title }}
+                        </nuxt-link>
                     </div>
 
                     <img
@@ -187,7 +196,12 @@ export default {
         for (var index in postData.toc) {
             postData.toc[index].id = md5(postData.toc[index].id)
         }
+        postData.category = await $content(
+            'categories',
+            postData.category
+        ).fetch()
 
+        console.log(postData)
         return {
             postData,
             perv,
