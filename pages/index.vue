@@ -58,7 +58,15 @@ export default {
         }
 
         posts = await $content('articles')
-            .only(['title', 'createdAt', 'summary', 'tags', 'image', 'slug', 'category'])
+            .only([
+                'title',
+                'createdAt',
+                'summary',
+                'tags',
+                'image',
+                'slug',
+                'category',
+            ])
             .where({
                 isOnline: true,
             })
@@ -69,7 +77,7 @@ export default {
         let newPosts = []
         for (var item of posts) {
             var post = new Object()
-            console.log(item);
+            console.log(item)
             post.title = await item.title
             post.summary = await item.summary
             post.image = await item.image
@@ -87,7 +95,9 @@ export default {
             newPosts.push(post)
         }
 
-        let categories = await $content('categories').fetch()
+        let categories = await $content('categories')
+            .sortBy('sort', 'asc')
+            .fetch()
 
         store.commit('setLoading', false)
         return {
