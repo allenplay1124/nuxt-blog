@@ -62,7 +62,8 @@ export default {
     build: {},
 
     tailwindcss: {
-        jit: false,
+        cssPath: '~/assets/css/tailwind.css',
+        jit: true,
         // add '~tailwind.config` alias
         exposeConfig: true,
         configPath: 'tailwind.config.js',
