@@ -6,9 +6,7 @@
         </header>
         <transition name="fade">
             <div class="loading-wrapper" v-show="loading">
-                <div class="loading" :class="loadingClass">
-                    玩
-                </div>
+                <div class="loading" :class="loadingClass">玩</div>
             </div>
         </transition>
         <Nuxt />
@@ -40,9 +38,7 @@ export default {
         var loading = document.querySelector('.loading')
 
         var colorParcent = 40
-        let count = setInterval(function() {
-            console.log(colorParcent)
-
+        let count = setInterval(function () {
             if (colorParcent == 40) {
                 self.loadingClass['loading-20'] = false
                 self.loadingClass['loading-40'] = true
@@ -78,7 +74,7 @@ export default {
             colorParcent = colorParcent + 20
         }, 500)
 
-        setTimeout(function() {
+        setTimeout(function () {
             clearInterval(count)
             self.loading = false
         }, 3000)

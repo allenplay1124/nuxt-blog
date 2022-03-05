@@ -77,7 +77,7 @@ export default {
         let newPosts = []
         for (var item of posts) {
             var post = new Object()
-            console.log(item)
+
             post.title = await item.title
             post.summary = await item.summary
             post.image = await item.image

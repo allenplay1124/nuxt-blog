@@ -1,11 +1,37 @@
 <template>
     <div class="carousel">
         <swiper class="swiper" :options="swiperOption">
-            <swiper-slide v-for="(item, index) in categories" :key="index">
-                <div v-if="item.slider == ''" class="swiper-slider-item">
-                    <nuxt-link :to="item.path">
-                        {{ item.title }}
-                    </nuxt-link>
+            <swiper-slide
+                v-for="(item, index) in categories"
+                :key="index"
+                class="w-full h-80"
+            >
+                <div
+                    class="w-full h-80"
+                    :style="{
+                        'background-image': 'url(' + item.src + ')',
+                        'background-position': 'center center',
+                        'background-repeat': 'no-repeat',
+                        'background-size': 'cover ',
+                    }"
+                >
+                    <div class="lg:container mx-auto pt-10">
+                        <div
+                            class="
+                                bg-[rgba(255,255,255,0.3)]
+                                p-5
+                                text-gray-900
+                                backdrop-blur-sm
+                            "
+                        >
+                            <div class="text-2xl">
+                                {{ item.title }}
+                            </div>
+                            <div class="text-md">
+                                <nuxt-content :document="item" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </swiper-slide>
 
@@ -32,7 +58,7 @@ export default {
                 spaceBetween: 30,
                 centeredSlides: true,
                 autoplay: {
-                    delay: 2500,
+                    delay: 15000,
                     disableOnInteraction: false,
                 },
                 pagination: {
@@ -54,24 +80,6 @@ export default {
 </script>
 
 <style scoped>
-.carousel {
-    width: 100%;
-    height: 400px;
-    background-image: linear-gradient(45deg, #5ee7df 0%, #b490ca 100%);
-}
-
-.swiper-slider-item {
-    height: 400px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slider-item a {
-    background: rgba(36, 149, 255, 0.6);
-    padding: 10px;
-    border-radius: 20px;
-    color: #fff;
+.swiper-title {
 }
 </style>

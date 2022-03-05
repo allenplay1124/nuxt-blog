@@ -1,6 +1,8 @@
 <template>
-    <section class="bg-indigo-300 dark:bg-blue-900 p-10">
-        <h3 class="text-center text-5xl dark:text-gray-100 py-5">最新文章</h3>
+    <section
+        class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10"
+    >
+        <h3 class="text-center text-3xl dark:text-gray-100 py-5">最新文章</h3>
         <div class="lg:container m-auto py-5 lg:px-10">
             <div
                 class="grid gap-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1"
@@ -11,32 +13,32 @@
                     class="
                         group
                         bg-gray-100
-                        dark:bg-gray-600
+                        dark:bg-gray-700
                         rounded-lg
                         shadow-md
                         relative
                         hover:shadow-2xl
                         transform
-                        hover:-translate-y-1
-                        hover:scale-110
+                        hover:-translate-y-1 hover:scale-110
                     "
                 >
-                    <div 
+                    <div
                         class="
                             text-center
                             absolute
                             top-0
                             right-0
                             font-extrabold
-                            bg-blue-500
-                            dark:text-gray-100
+                            bg-sky-500
+                            text-gray-100
+                            dark:bg-yellow-500
                             group-hover:bg-opacity-75
                             dark:group-hover:bg-yellow-600
                             m-auto
-                            rounded-tr-md
-                            rounded-bl-xl
+                            rounded-tr-md rounded-bl-xl
                             p-2
-                        ">
+                        "
+                    >
                         <nuxt-link :to="item.category.path">
                             {{ item.category.title }}
                         </nuxt-link>
@@ -51,16 +53,19 @@
                     <div
                         class="
                             w-40
-                            p-2
+                            p-1
                             text-center
+                            mt-2
+                            ml-2
                             rounded-full
-                            absolute
-                            bg-blue-500
+                            bg-sky-500
+                            dark:bg-yellow-500
                             text-gray-100
                             top-40
                             left-2
                             group-hover:bg-opacity-75
                             dark:group-hover:bg-yellow-600
+                            text-sm
                         "
                     >
                         <fa :icon="['fas', 'calendar-alt']" />
@@ -70,10 +75,10 @@
                         <h3
                             class="
                                 text-left
-                                lg:text-2xl
-                                md:text-2xl
-                                xs:text-2xl
-                                text-blue-500
+                                lg:text-xl
+                                md:text-xl
+                                xs:text-xl
+                                text-sky-500
                                 font-medium
                                 dark:text-yellow-500
                                 group-hover:border-b-2
@@ -84,7 +89,9 @@
                             </nuxt-link>
                         </h3>
 
-                        <div class="py-3 dark:text-gray-100 text-justify">
+                        <div
+                            class="py-3 dark:text-gray-100 text-justify text-sm"
+                        >
                             {{ item.summary }}
                         </div>
 
@@ -101,11 +108,12 @@
                                 v-for="(tag, index2) in item.tags"
                                 :key="index2"
                                 class="
-                                    bg-blue-400
+                                    bg-sky-500
                                     dark:bg-yellow-500
                                     text-gray-100
-                                    p-1
-                                    rounded-3xl
+                                    p-2
+                                    text-xs
+                                    rounded-full
                                 "
                             >
                                 <nuxt-link :to="tag.path">
@@ -121,8 +129,7 @@
                     class="
                         bg-blue-200
                         text-gray-500
-                        dark:bg-yellow-600
-                        dark:text-gray-100
+                        dark:bg-yellow-600 dark:text-gray-100
                         p-5
                         mt-3
                         rounded-full
