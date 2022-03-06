@@ -2,7 +2,7 @@
     <section
         class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10"
     >
-        <h3 class="text-center text-3xl dark:text-gray-100 py-5">最新文章</h3>
+        <h3 class="text-center text-3xl text-gray-100 py-5">最新文章</h3>
         <div class="lg:container m-auto py-5 lg:px-10">
             <div
                 class="grid gap-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1"
@@ -108,12 +108,13 @@
                                 v-for="(tag, index2) in item.tags"
                                 :key="index2"
                                 class="
-                                    bg-sky-500
+                                    bg-gray-200
                                     dark:bg-yellow-500
-                                    text-gray-100
-                                    p-2
+                                    text-gray-500
+                                    p-1
                                     text-xs
-                                    rounded-full
+                                    rounded
+                                    hover:bg-sky-500 hover:text-gray-100
                                 "
                             >
                                 <nuxt-link :to="tag.path">
@@ -124,11 +125,11 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center py-10">
+            <div class="text-center py-10 mt-2">
                 <a
                     class="
-                        bg-blue-200
-                        text-gray-500
+                        bg-sky-500
+                        text-gray-100
                         dark:bg-yellow-600 dark:text-gray-100
                         p-5
                         mt-3

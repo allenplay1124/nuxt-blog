@@ -16,7 +16,7 @@
     }
 
     pre {
-        border-radius: 0.5rem;
+        border-radius: 3px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -44,24 +44,24 @@
     }
 
     tr:first-child th:first-child {
-        border-top-left-radius: 12px;
+        border-top-left-radius: 3px;
     }
     /*第一欄最後列：左下*/
     tr:last-child td:first-child {
-        border-bottom-left-radius: 12px;
+        border-bottom-left-radius: 3px;
     }
     /*最後欄第一列：右上*/
     tr:first-child th:last-child {
-        border-top-right-radius: 12px;
+        border-top-right-radius: 3px;
     }
     /*最後欄第一列：右下*/
     tr:last-child td:last-child {
-        border-bottom-right-radius: 12px;
+        border-bottom-right-radius: 3px;
     }
 
     img {
         width: 100%;
-        border-radius: 10px;
+        border-radius: 3px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
