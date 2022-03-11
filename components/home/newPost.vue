@@ -31,9 +31,7 @@
                             font-extrabold
                             bg-sky-500
                             text-gray-100
-                            dark:bg-yellow-500
                             group-hover:bg-opacity-75
-                            dark:group-hover:bg-yellow-600
                             m-auto
                             rounded-tr-md rounded-bl-xl
                             p-2
@@ -59,12 +57,11 @@
                             ml-2
                             rounded-full
                             bg-sky-500
-                            dark:bg-yellow-500
                             text-gray-100
                             top-40
                             left-2
                             group-hover:bg-opacity-75
-                            dark:group-hover:bg-yellow-600
+                            dark:group-hover:bg-sky-400
                             text-sm
                         "
                     >
@@ -80,8 +77,10 @@
                                 xs:text-xl
                                 text-sky-500
                                 font-medium
-                                dark:text-yellow-500
-                                group-hover:border-b-2
+                                group-hover:border-b
+                                border-sky-500
+                                transition
+                                group-hover:ease-in-out group-hover:duration-150
                             "
                         >
                             <nuxt-link :to="item.path">
@@ -90,7 +89,7 @@
                         </h3>
 
                         <div
-                            class="py-3 dark:text-gray-100 text-justify text-sm"
+                            class="py-3 dark:text-sky-100 text-justify text-sm"
                         >
                             {{ item.summary }}
                         </div>
@@ -109,12 +108,15 @@
                                 :key="index2"
                                 class="
                                     bg-gray-200
-                                    dark:bg-yellow-500
                                     text-gray-500
                                     p-1
                                     text-xs
                                     rounded
                                     hover:bg-sky-500 hover:text-gray-100
+                                    dark:bg-sky-500
+                                    dark:hover:bg-gray-100
+                                    dark:text-gray-100
+                                    dark:hover:text-sky-500
                                 "
                             >
                                 <nuxt-link :to="tag.path">
@@ -127,14 +129,7 @@
             </div>
             <div class="text-center py-10 mt-2">
                 <a
-                    class="
-                        bg-sky-500
-                        text-gray-100
-                        dark:bg-yellow-600 dark:text-gray-100
-                        p-5
-                        mt-3
-                        rounded-full
-                    "
+                    class="bg-sky-500 text-gray-100 p-5 mt-3 rounded-full"
                     href="#"
                 >
                     全部文章
