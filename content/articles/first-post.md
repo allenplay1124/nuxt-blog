@@ -10,7 +10,7 @@ tags:
     - laravel
     - vue
 
-category: pragram
+category: os
 ---
 
 ## 這是第一段
