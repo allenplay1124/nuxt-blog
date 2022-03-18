@@ -14,10 +14,18 @@
         "
     >
         <div class="w-full">
-            <img class="rounded shadow object-cover" :src="post.image" />
+            <nuxt-link :to="post.path">
+                <img
+                    class="rounded shadow object-cover"
+                    :src="post.image"
+                    :alt="post.title"
+                />
+            </nuxt-link>
         </div>
         <div class="mt-2 w-full">
-            <h2 class="text-3xl">{{ post.title }}</h2>
+            <nuxt-link :to="post.path">
+                <h2 class="text-3xl">{{ post.title }}</h2>
+            </nuxt-link>
 
             <div class="mb-10 mt-3 dark:text-gray-50">
                 <fa :icon="['far', 'calendar']" />
