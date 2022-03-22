@@ -29,7 +29,9 @@
                         rounded
                         p-3
                     "
-                ></div>
+                >
+                    <TagSidebar :tags="tags" />
+                </div>
             </div>
         </div>
         <Footbar />
@@ -39,10 +41,12 @@
 import Footbar from '~/components/home/footbar'
 import TagHeader from '~/components/tags/header'
 import PostBlock from '~/components/articles/post-block'
+import TagSidebar from '~/components/sidebar/tag-list'
 export default {
     components: {
         TagHeader,
         PostBlock,
+        TagSidebar,
         Footbar,
     },
     async asyncData({ $content, params }) {

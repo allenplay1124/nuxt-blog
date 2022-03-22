@@ -16,7 +16,13 @@
         <div class="w-full">
             <nuxt-link :to="post.path">
                 <img
-                    class="rounded shadow object-cover"
+                    class="
+                        rounded
+                        shadow
+                        object-cover
+                        h-[280px]
+                        hover:shadow-xl
+                    "
                     :src="post.image"
                     :alt="post.title"
                 />

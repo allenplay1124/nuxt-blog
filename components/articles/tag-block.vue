@@ -26,7 +26,11 @@
                     bg-gray-200
                     text-gray-600
                     hover:bg-sky-500 hover:text-gray-50
-                    dark:bg-sky-500 dark:text-gray-50
+                    dark:bg-sky-500
+                    dark:text-gray-50
+                    dark:hover:bg-gray-100
+                    dark:hover:text-sky-600
+                    hover:shadow-xl
                 "
                 v-for="(item, index) in tags"
                 :key="index"
