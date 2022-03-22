@@ -31,7 +31,7 @@
         </div>
         <div class="mt-2 w-full">
             <nuxt-link :to="post.path">
-                <h2 class="text-3xl">{{ post.title }}</h2>
+                <h2 class="text-2xl">{{ post.title }}</h2>
             </nuxt-link>
 
             <div class="mb-10 mt-3 dark:text-gray-50">

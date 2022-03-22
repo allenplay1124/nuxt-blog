@@ -128,12 +128,12 @@
                 </div>
             </div>
             <div class="text-center py-10 mt-2">
-                <a
+                <nuxt-link
                     class="bg-sky-500 text-gray-100 p-5 mt-3 rounded-full"
-                    href="#"
+                    to="/articles"
                 >
                     全部文章
-                </a>
+                </nuxt-link>
             </div>
         </div>
     </section>
