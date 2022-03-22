@@ -83,8 +83,6 @@ export default {
             .sortBy('createdAt', 'desc')
             .fetch()
 
-        console.log(postLists, categories, category)
-
         return {
             postLists,
             categories,
