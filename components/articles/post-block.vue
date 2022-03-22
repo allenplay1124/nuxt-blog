@@ -22,6 +22,7 @@
                         object-cover
                         h-[280px]
                         hover:shadow-xl
+                        w-full
                     "
                     :src="post.image"
                     :alt="post.title"
