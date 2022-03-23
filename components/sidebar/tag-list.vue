@@ -15,20 +15,7 @@
         </h2>
         <div class="py-8">
             <span v-for="(item, index) in tags" :key="index">
-                <nuxt-link
-                    :to="item.path"
-                    class="
-                        p-2
-                        my-2
-                        rounded
-                        shadow
-                        hover:bg-gradient-to-r
-                        from-sky-500
-                        to-lime-500
-                        hover:text-gray-100
-                        dark:hover:from-cyan-500 dark:hover:to-blue-500
-                    "
-                >
+                <nuxt-link :to="item.path" class="p-2 m-1 rounded shadow tag">
                     {{ item.title }}
                 </nuxt-link>
             </span>
@@ -40,3 +27,13 @@ export default {
     props: ['tags'],
 }
 </script>
+<style scoped>
+.tag:hover {
+    background: linear-gradient(
+        145deg,
+        rgba(77, 121, 207, 1) 0%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    color: #fff;
+}
+</style>
