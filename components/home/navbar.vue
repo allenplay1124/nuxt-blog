@@ -1,7 +1,7 @@
 <template>
     <nav class="w-full h-16 bg-gray-100 dark:bg-gray-700">
         <div class="lg:container mx-auto pt-3 flex justify-between px-4">
-            <h1 class="text-3xl dark:text-gray-100">
+            <h1 class="text-3xl dark:text-gray-100 site-title">
                 <nuxt-link to="/">
                     {{ this.$nuxt.$options.head.title }}
                 </nuxt-link>
@@ -101,3 +101,16 @@ export default {
     },
 }
 </script>
+<style scoped>
+.site-title {
+    width: 150px;
+    height: 50px;
+    background-image: url(/images/logo.png);
+    white-space: nowrap;
+    color: transparent;
+}
+
+.dark .site-title {
+    background-image: url(/images/logo-light.png);
+}
+</style>
