@@ -96,7 +96,7 @@ export default {
             menus: [
                 { name: '首頁', route: '/', target: '_self' },
                 { name: '文章列表', route: '/articles', target: '_self' },
-                { name: '關於我', route: '/', target: '_self' },
+                { name: '關於我', route: '/abount', target: '_self' },
             ],
             isShowBarMenu: false,
         }
