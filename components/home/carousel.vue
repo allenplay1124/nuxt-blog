@@ -6,33 +6,35 @@
                 :key="index"
                 class="w-full h-80"
             >
-                <div
-                    class="w-full h-80"
-                    :style="{
-                        'background-image': 'url(' + item.src + ')',
-                        'background-position': 'center center',
-                        'background-repeat': 'no-repeat',
-                        'background-size': 'cover ',
-                    }"
-                >
-                    <div class="lg:container mx-auto pt-10">
-                        <div
-                            class="
-                                bg-[rgba(255,255,255,0.3)]
-                                p-5
-                                text-gray-900
-                                backdrop-blur-sm
-                            "
-                        >
-                            <div class="text-2xl">
-                                {{ item.title }}
-                            </div>
-                            <div class="text-md">
-                                <nuxt-content :document="item" />
+                <nuxt-link :to="item.path">
+                    <div
+                        class="w-full h-80"
+                        :style="{
+                            'background-image': 'url(' + item.src + ')',
+                            'background-position': 'center center',
+                            'background-repeat': 'no-repeat',
+                            'background-size': 'cover ',
+                        }"
+                    >
+                        <div class="lg:container mx-auto pt-10">
+                            <div
+                                class="
+                                    bg-[rgba(255,255,255,0.3)]
+                                    p-5
+                                    text-gray-900
+                                    backdrop-blur-sm
+                                "
+                            >
+                                <div class="text-2xl">
+                                    {{ item.title }}
+                                </div>
+                                <div class="text-md">
+                                    <nuxt-content :document="item" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </nuxt-link>
             </swiper-slide>
 
             <div class="swiper-pagination" slot="pagination"></div>
