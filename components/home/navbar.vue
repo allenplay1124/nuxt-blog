@@ -9,7 +9,14 @@
 
             <div class="lg:hidden">
                 <button
-                    class="bg-gray-200 text-2xl px-3 py-2 rounded-full"
+                    class="
+                        bg-gray-200
+                        text-2xl
+                        px-3
+                        py-2
+                        rounded-full
+                        hover:shadow
+                    "
                     @click="toggleBarMenu()"
                 >
                     <fa :icon="['fas', 'bars']" />
@@ -21,9 +28,10 @@
                     v-for="(item, index) in menus"
                     :key="index"
                     class="
-                        p-2
-                        rounded-full
-                        hover:bg-blue-200
+                        px-2
+                        pt-4
+                        rounded
+                        hover:shadow hover:bg-blue-200
                         dark:hover:bg-gray-900
                     "
                 >
@@ -87,7 +95,6 @@ export default {
         return {
             menus: [
                 { name: '首頁', route: '/', target: '_self' },
-                { name: '標籤', route: '/', target: '_self' },
                 { name: '文章列表', route: '/articles', target: '_self' },
                 { name: '關於我', route: '/', target: '_self' },
             ],
