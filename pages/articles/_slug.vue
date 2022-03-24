@@ -109,7 +109,10 @@
                         </div>
 
                         <div class="dark:text-gray-100">
-                            <nuxt-content :document="postData" />
+                            <nuxt-content
+                                :document="postData"
+                                class="prose dark:prose-invert"
+                            />
                         </div>
 
                         <div>
