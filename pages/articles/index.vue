@@ -58,6 +58,7 @@ export default {
     },
     async asyncData({ $content }) {
         const posts = await $content('articles')
+            .where({ status: true })
             .sortBy('createdAt', 'desc')
             .fetch()
 
