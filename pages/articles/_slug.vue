@@ -296,5 +296,17 @@ export default {
             next,
         }
     },
+    head() {
+        return {
+            title: this.postData.title + ' - ' + process.env.title,
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.postData.summary,
+                },
+            ],
+        }
+    },
 }
 </script>
