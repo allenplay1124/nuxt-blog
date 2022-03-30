@@ -69,10 +69,30 @@
     pre {
         margin-top: 1rem;
         margin-bottom: 1rem;
+        code {
+          border: 0;
+          background: none;
+        }
     }
 
     a {
         color: #00c3ff;
         text-decoration: none;
+    }
+
+    code {
+      border:1px solid #ff8585;
+      background: #ffd2d2;
+      padding: 2px;
+      border-radius: 5px;
+      color: #FF0000;
+    }
+
+    code:before {
+      display: none;
+    }
+
+    code:after {
+      display: none;
     }
 }
