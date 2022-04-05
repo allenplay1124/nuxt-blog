@@ -108,14 +108,14 @@
                             </div>
                         </div>
 
-                        <div class="dark:text-gray-100">
+                        <div class="dark:text-gray-100 my-3">
                             <nuxt-content
                                 :document="postData"
                                 class="prose dark:prose-invert"
                             />
                         </div>
-
-                        <div>
+                        <hr />
+                        <div class="my-3">
                             <ul class="clear-both">
                                 <li
                                     class="
