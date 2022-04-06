@@ -67,10 +67,6 @@ export default {
             post.summary = await item.summary
             post.image = await item.image
             post.slug = await item.slug
-            post.title = await item.title
-            post.summary = await item.summary
-            post.image = await item.image
-            post.slug = await item.slug
             post.createdAt = await item.createdAt
             post.path = await item.path
 
