@@ -41,7 +41,7 @@
                             {{ item.category.title }}
                         </nuxt-link>
                     </div>
-                    <nuxt-link :to="item.path">
+                    <nuxt-link :to="'/articles/' + item.slug">
                         <img
                             class="object-cover rounded-t-md"
                             :src="item.image"
@@ -65,29 +65,29 @@
                             text-sm
                         "
                     >
-                        <fa :icon="['fas', 'calendar-alt']" />
+                        📅 &nbsp;&nbsp;
                         {{ item.createdAt.substring(0, 10) }}
                     </div>
                     <div class="px-5 py-5">
-                        <h3
-                            class="
-                                text-left
-                                lg:text-xl
-                                md:text-xl
-                                xs:text-xl
-                                text-sky-500
-                                font-medium
-                                group-hover:border-b
-                                border-sky-500
-                                transition
-                                group-hover:ease-in-out group-hover:duration-150
-                            "
-                        >
-                            <nuxt-link :to="item.path">
+                        <nuxt-link :to="'/articles/' + item.slug">
+                            <h3
+                                class="
+                                    text-left
+                                    lg:text-xl
+                                    md:text-xl
+                                    xs:text-xl
+                                    text-sky-500
+                                    font-medium
+                                    group-hover:border-b
+                                    border-sky-500
+                                    transition
+                                    group-hover:ease-in-out
+                                    group-hover:duration-150
+                                "
+                            >
                                 {{ item.title }}
-                            </nuxt-link>
-                        </h3>
-
+                            </h3>
+                        </nuxt-link>
                         <div
                             class="py-3 dark:text-sky-100 text-justify text-sm"
                         >
