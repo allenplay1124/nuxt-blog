@@ -2,9 +2,9 @@
     <nav class="w-full h-16 bg-gray-100 dark:bg-gray-700">
         <div class="lg:container mx-auto pt-3 flex justify-between px-4">
             <h1 class="text-3xl dark:text-gray-100 site-title">
-                <nuxt-link to="/">
+                <a href="/">
                     {{ this.$nuxt.$options.head.title }}
-                </nuxt-link>
+                </a>
             </h1>
 
             <div class="lg:hidden">
@@ -19,7 +19,7 @@
                     "
                     @click="toggleBarMenu()"
                 >
-                    <fa :icon="['fas', 'bars']" />
+                    ☰
                 </button>
             </div>
 
@@ -35,9 +35,9 @@
                         dark:hover:bg-gray-900
                     "
                 >
-                    <nuxt-link :to="item.route">
+                    <a :href="item.route" :target="item.target">
                         {{ item.name }}
-                    </nuxt-link>
+                    </a>
                 </li>
             </ul>
 
@@ -61,7 +61,7 @@
                     class="text-right mr-3 text-xl dark:text-gray-50"
                     @click="toggleBarMenu()"
                 >
-                    <fa :icon="['fas', 'times']" />
+                    ྾
                 </button>
 
                 <div class="divide-y-2 divide-gray-500 mt-2">
@@ -80,9 +80,9 @@
                             dark:text-yellow-500 dark:hover:bg-gray-200
                         "
                     >
-                        <nuxt-link :to="item.route">
+                        <a :href="item.route" :target="item.target">
                             {{ item.name }}
-                        </nuxt-link>
+                        </a>
                     </li>
                 </ul>
             </div>

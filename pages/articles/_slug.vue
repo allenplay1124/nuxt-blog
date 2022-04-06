@@ -22,17 +22,14 @@
                         <hr class="my-5" />
 
                         <div class="mb-10 mt-3 dark:text-gray-50">
-                            <fa :icon="['far', 'calendar']" />
+                            📅 &nbsp;&nbsp;
 
                             {{
                                 postData.createdAt
                                     .substring(0, 19)
                                     .replace('T', ' ')
                             }}
-
-                            &nbsp;&nbsp;
-
-                            <fa :icon="['far', 'folder-open']" />
+                            &nbsp;&nbsp; 📂 &nbsp;&nbsp;
 
                             <nuxt-link :to="postData.category.path">
                                 {{ postData.category.title }}
@@ -225,8 +222,8 @@
                                             :key="item.id"
                                             class="py-2 hover:border-gray-500"
                                         >
-                                            <nuxt-link
-                                                :to="`#${item.id}`"
+                                            <a
+                                                :href="`#${item.id}`"
                                                 class="
                                                     text-blue-500
                                                     dark:text-blue-300
@@ -235,7 +232,7 @@
                                                 "
                                             >
                                                 {{ item.text }}
-                                            </nuxt-link>
+                                            </a>
                                         </li>
                                     </ul>
                                 </nav>

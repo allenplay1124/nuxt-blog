@@ -2,11 +2,15 @@
     <div
         class="
             dark-mode-bar
-            bg-blue-100 h-8 w-full dark:bg-yellow-500 dark:text-blue-100 
-            pr-5 pt-1
+            bg-blue-100
+            h-8
+            w-full
+            dark:bg-yellow-500 dark:text-blue-100
+            pr-5
+            pt-1
         "
     >
-        <div class="flex justify-end  mx-auto">
+        <div class="flex justify-end mx-auto">
             <div>
                 <input
                     id="dark-mode-system"
@@ -16,17 +20,32 @@
                 />
                 <label
                     for="dark-mode-system"
-                    class="w-4 h-4 p-1 rounded-full bg-gray-50 dark:bg-gray-700 cursor-pointer"
+                    class="
+                        w-4
+                        h-4
+                        p-1
+                        rounded-full
+                        bg-gray-50
+                        dark:bg-gray-700
+                        cursor-pointer
+                    "
                     @mouseover="darkModeHoverActive('system')"
                     @mouseleave="darkModeHoverUnActive('system')"
                 >
-                    <fa :icon="['fas', 'desktop']" />
+                    系
                 </label>
                 <div
                     v-show="darkModeSystemHover"
                     class="
-                        text-xs rounded-3xl bg-blue-100 p-2 mt-2 text-gray-500 
-                        absolute right-8 dark:bg-gray-700 dark:text-gray-100
+                        text-xs
+                        rounded-3xl
+                        bg-blue-100
+                        p-2
+                        mt-2
+                        text-gray-500
+                        absolute
+                        right-8
+                        dark:bg-gray-700 dark:text-gray-100
                     "
                 >
                     依系統設定
@@ -41,17 +60,32 @@
                 />
                 <label
                     for="dark-mode-light"
-                    class="w-4 h-4 p-1 rounded-full bg-gray-50 dark:bg-gray-700 cursor-pointer"
+                    class="
+                        w-4
+                        h-4
+                        p-1
+                        rounded-full
+                        bg-gray-50
+                        dark:bg-gray-700
+                        cursor-pointer
+                    "
                     @mouseover="darkModeHoverActive('light')"
                     @mouseleave="darkModeHoverUnActive('light')"
                 >
-                    <fa :icon="['fas', 'sun']" />
+                    亮
                 </label>
                 <div
                     v-show="darkModeLightHover"
                     class="
-                    text-xs rounded-3xl bg-blue-100 p-2 mt-2 text-gray-500 
-                    absolute right-12 dark:bg-gray-700 dark:text-gray-100
+                        text-xs
+                        rounded-3xl
+                        bg-blue-100
+                        p-2
+                        mt-2
+                        text-gray-500
+                        absolute
+                        right-12
+                        dark:bg-gray-700 dark:text-gray-100
                     "
                 >
                     亮色系
@@ -66,17 +100,32 @@
                 />
                 <label
                     for="dark-mode-dark"
-                    class="w-4 h-4 p-1 rounded-full bg-gray-50 dark:bg-gray-700 cursor-pointer"
+                    class="
+                        w-4
+                        h-4
+                        p-1
+                        rounded-full
+                        bg-gray-50
+                        dark:bg-gray-700
+                        cursor-pointer
+                    "
                     @mouseover="darkModeHoverActive('dark')"
                     @mouseleave="darkModeHoverUnActive('dark')"
                 >
-                    <fa :icon="['fas', 'moon']" />
+                    暗
                 </label>
                 <div
                     v-show="darkModeDarkHover"
                     class="
-                        text-xs rounded-3xl bg-blue-100 p-2 mt-2 text-gray-500 
-                        absolute right-2 dark:bg-gray-700 dark:text-gray-100
+                        text-xs
+                        rounded-3xl
+                        bg-blue-100
+                        p-2
+                        mt-2
+                        text-gray-500
+                        absolute
+                        right-2
+                        dark:bg-gray-700 dark:text-gray-100
                     "
                 >
                     暗色系
