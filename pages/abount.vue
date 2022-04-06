@@ -39,8 +39,6 @@ export default {
 
         const site = await $content('abount', 'site').fetch()
 
-        console.log(profile, site)
-
         return {
             profile,
             site,
