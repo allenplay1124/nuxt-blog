@@ -20,10 +20,6 @@
     "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/tailwindcss": "5.0.0-4",
     "@tailwindcss/typography": "^0.5.2",

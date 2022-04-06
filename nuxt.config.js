@@ -19,7 +19,11 @@ export default {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1',
             },
-            { hid: 'description', name: 'description', content: '' },
+            {
+                hid: 'description',
+                name: 'description',
+                content: process.env.npm_package_description || '',
+            },
             { name: 'format-detection', content: 'telephone=no' },
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -53,8 +57,6 @@ export default {
         '@nuxtjs/color-mode',
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
-        // https://github.com/nuxt-community/fontawesome-module#readme
-        '@nuxtjs/fontawesome',
         //https://github.com/ivodolenc/nuxt-gsap-module
         'nuxt-gsap-module',
     ],
@@ -75,15 +77,6 @@ export default {
 
     colorMode: {
         classSuffix: '',
-    },
-
-    fontawesome: {
-        component: 'fa',
-        icons: {
-            solid: true,
-            brands: true,
-            regular: true,
-        },
     },
 
     gsap: {
