@@ -108,7 +108,11 @@
                         <div class="dark:text-gray-100 my-3">
                             <nuxt-content
                                 :document="postData"
-                                class="prose dark:prose-invert"
+                                class="
+                                    prose
+                                    dark:prose-invert
+                                    nuxt-content-container
+                                "
                             />
                         </div>
                         <hr />

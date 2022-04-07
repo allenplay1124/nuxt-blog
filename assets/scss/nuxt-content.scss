@@ -1,99 +1,104 @@
 .nuxt-content-container {
-    text-align: justify;
-    font-size: 1rem;
-    line-height: 150%;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 150%;
 
-    h1 {
-        font-size: 2.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 
-    h2 {
-        font-size: 2rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
+  h2 {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 
-    pre {
-        border-radius: 3px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
+  pre {
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-    table {
-        width: 100%;
-        margin: 0 auto;
-        border-collapse: separate;
-        border-spacing: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        color: #333;
-    }
+  table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
 
-    th {
-        padding: 0.5rem;
-        background: #e7e7e7;
-        border-bottom: 1px solid #cecbcb;
-    }
+  th {
+    padding: 0.5rem;
+    background: #e7e7e7;
+    border-bottom: 1px solid #cecbcb;
+  }
 
-    td {
-        padding: 0.5rem;
-        background: #fff;
-        border-bottom: 1px solid #cecbcb;
-    }
+  td {
+    padding: 0.5rem;
+    background: #fff;
+    border-bottom: 1px solid #cecbcb;
+  }
 
-    tr:first-child th:first-child {
-        border-top-left-radius: 3px;
-    }
-    /*第一欄最後列：左下*/
-    tr:last-child td:first-child {
-        border-bottom-left-radius: 3px;
-    }
-    /*最後欄第一列：右上*/
-    tr:first-child th:last-child {
-        border-top-right-radius: 3px;
-    }
-    /*最後欄第一列：右下*/
-    tr:last-child td:last-child {
-        border-bottom-right-radius: 3px;
-    }
+  tr:first-child th:first-child {
+    border-top-left-radius: 3px;
+  }
 
-    img {
-        width: 100%;
-        border-radius: 3px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
+  /*第一欄最後列：左下*/
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+  }
 
-    pre {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        code {
-          border: 0;
-          background: none;
-        }
-    }
+  /*最後欄第一列：右上*/
+  tr:first-child th:last-child {
+    border-top-right-radius: 3px;
+  }
 
-    a {
-        color: #00c3ff;
-        text-decoration: none;
-    }
+  /*最後欄第一列：右下*/
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+  pre {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     code {
-      border:1px solid #DE526F;
-      background: #ffe5e5;
-      padding: 3px;
-      border-radius: 5px;
-      color: #DE526F;
-      font-weight: normal;
+      border: 0;
+      background: none;
     }
+  }
 
-    code:before {
-      display: none;
-    }
+  a {
+    color: #00c3ff;
+    text-decoration: none;
+  }
 
-    code:after {
-      display: none;
-    }
+  code {
+    border: 1px solid #DE526F;
+    background: #ffe5e5;
+    padding: 3px;
+    border-radius: 5px;
+    color: #DE526F;
+    font-weight: normal;
+  }
+
+  code:before {
+    display: none;
+  }
+
+  code:after {
+    display: none;
+  }
 }
