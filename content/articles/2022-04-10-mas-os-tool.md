@@ -1,7 +1,7 @@
 ---
 title: 大推！MacOS 上好用軟體集  
 summary: 這裡收集了，站長在 MacOS 上常用的軟體
-image: /images/articles/2022-03-26-php-zip/cover.png
+image: /images/articles/2022-04-10-mas-os-tool/cover.png
 status: true
 category: software
 tags:

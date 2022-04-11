@@ -1,7 +1,7 @@
 ---
 title: 軟體
 type: class
-src: '/images/slider/program.png'
+src: '/images/slider/software.png'
 sort: 1
 ---
 
