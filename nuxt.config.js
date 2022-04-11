@@ -59,8 +59,6 @@ export default {
         '@nuxtjs/tailwindcss',
         //https://github.com/ivodolenc/nuxt-gsap-module
         'nuxt-gsap-module',
-        //https://google-analytics.nuxtjs.org/
-        '@nuxtjs/google-analytics',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -68,13 +66,6 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
-
-    googleAnalytics: {
-        id: 'UA-424875-8',
-        autoTracking: {
-            screenview: true,
-        },
-    },
 
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.css',
