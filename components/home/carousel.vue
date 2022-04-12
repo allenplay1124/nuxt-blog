@@ -1,6 +1,14 @@
 <template>
     <div class="carousel">
         <swiper class="swiper" :options="swiperOption">
+            <swiper-slide class="first-swiper">
+                <h1 class="title">{{ this.$nuxt.$options.head.title }}</h1>
+                <div class="item-content">
+                    <span>軟體分享</span>
+                    <span>程式設計</span>
+                    <span>技術探討</span>
+                </div>
+            </swiper-slide>
             <swiper-slide
                 v-for="(item, index) in categories"
                 :key="index"

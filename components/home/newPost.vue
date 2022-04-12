@@ -1,6 +1,14 @@
 <template>
     <section
-        class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10"
+        class="
+            bg-gradient-to-b
+            dark:bg-gradient-to-r
+            from-blue-500
+            via-sky-500
+            to-teal-400
+            dark:from-cyan-900 dark:via-sky-600 dark:to-purple-600
+            p-10
+        "
     >
         <h3 class="text-center text-3xl text-gray-100 py-5">最新文章</h3>
         <div class="lg:container m-auto py-5 lg:px-10">
