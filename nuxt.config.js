@@ -1,3 +1,4 @@
+import getRoutes from './utils/getRoutes'
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
@@ -62,7 +63,7 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ['@nuxt/content'],
+    modules: ['@nuxt/content', '@nuxtjs/sitemap'],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
@@ -81,5 +82,12 @@ export default {
 
     gsap: {
         /* Module Options */
+    },
+
+    sitemap: {
+        hostname: 'https://allenplay.net',
+        routes() {
+            return getRoutes()
+        },
     },
 }
