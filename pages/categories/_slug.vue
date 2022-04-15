@@ -91,7 +91,7 @@ export default {
     },
     head() {
         return {
-            title: category.title + ' - ' + process.env.title,
+            title: '分類：' + this.category.title + ' - ' + process.env.title,
         }
     },
 }

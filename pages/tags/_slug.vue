@@ -92,7 +92,7 @@ export default {
     },
     head() {
         return {
-            title: tagInfo.title + ' - ' + process.env.title,
+            title: '標籤：' + this.tagInfo.title + ' - ' + process.env.title,
         }
     },
 }
