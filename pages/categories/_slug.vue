@@ -89,5 +89,10 @@ export default {
             category,
         }
     },
+    head() {
+        return {
+            title: category.title + ' - ' + process.env.title,
+        }
+    },
 }
 </script>

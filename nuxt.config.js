@@ -23,7 +23,8 @@ export default {
             {
                 hid: 'description',
                 name: 'description',
-                content: process.env.npm_package_description || '',
+                content:
+                    '一個生活在高雄的地方程式設計師，喜歡研究Web方面新技術，歡迎同好一起討論',
             },
             { name: 'format-detection', content: 'telephone=no' },
         ],

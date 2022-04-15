@@ -90,5 +90,10 @@ export default {
             tagInfo,
         }
     },
+    head() {
+        return {
+            title: tagInfo.title + ' - ' + process.env.title,
+        }
+    },
 }
 </script>
