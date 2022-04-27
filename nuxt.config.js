@@ -64,7 +64,7 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ['@nuxt/content', '@nuxtjs/sitemap'],
+    modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/robots'],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
@@ -91,4 +91,10 @@ export default {
             return getRoutes()
         },
     },
+
+    robots: {
+        UserAgent: '*',
+        Allow: '/',
+        Sitemap: 'https://allenplay.net/sitemap.xml'
+    }
 }
