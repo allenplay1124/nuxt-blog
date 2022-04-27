@@ -47,3 +47,5 @@ Git 知名的原始碼代管服務平台，所發行 Git GUI 免費軟體，目�
 ## zsh Command Line + oh my zsh
 
 開發網站時常要用到 Command Line，雖然 `MacOS` 和 `Linux` 都支援 `bash`，但更喜歡 zsh + oh my zsh 各種插件，針對 git 優化，指令提醒功能，甚致可以顯示CPU、記憶體使用量等潮到爆的功能，你也可自訂佈景，讓你的 Command Line 呈現簡約風格。
+
+官綱：[Oh My zsh官網](https://ohmyz.sh/)
