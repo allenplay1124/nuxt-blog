@@ -104,3 +104,12 @@ brew install --cask hiddenbar
 雖雖 vscode 很強大，但有時讓人覺得有點肥大，若只是臨時要編輯文字檔，我會用這款輕量編輯器
 
 官網：https://macromates.com/
+
+
+## KeKa 壓縮軟體
+
+這是 MacOS 我用過最好用的壓縮軟體，支援多種壓縮格式，密碼保護，分片壓縮等功能，其中最棒是可「排除 MacOS 資源檔」檔的功能。
+
+在以往直接在 MacOS 打包壓縮的檔案，在 Windows 環境下打開，總會多出一些讓使用者迷惑的檔案，而這個功能就會幫忙先排除這檔案。
+
+官網：https://www.keka.io/
