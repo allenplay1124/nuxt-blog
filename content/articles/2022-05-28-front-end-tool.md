@@ -64,4 +64,57 @@ sudo apt-get update && sudo apt-get install yarn
 
 ## Nuxt.js
 
-是一個 Vue.js 框架，
+是一個混合式 Vue 框架，支援 **服務器渲染(SSR)**、**生成靜態頁面**或是**單頁應用程式(SPA)**，並優化了SEO，也支援 TypeScript。
+
+官網：https://nuxtjs.org/
+
+
+## tailwindcss
+
+是一個近期相當流行的 Utility Framework，也是我近期最用的 UI 構建工具，其特色包含：
+
+1. 快速上手
+2. 快速建置
+3. 高度客製化
+
+因為以上特色，真得讓人一用就愛上了。
+
+官網：https://tailwindcss.com/
+
+## Bootstrap
+
+相當知名且老牌的 UI component Framework，可以快速透過各種組件的組合建立 Web App，不過其實近期的專案，我已很少用到 Bootstrap 了。
+
+官網：https://getbootstrap.com/
+
+## element UI
+
+這是我也滿喜歡的一個 UI component Framework，相對於 Bootstrap 它的組件更加豐富，特別適合拿來做管理介面。
+
+官網：https://element.eleme.io/
+
+## Moment.js
+
+是一個專門處理日期與時間的Library，功能包含了：
+
+1. 日期時間格式化
+2. 日期時間相減運算
+3. 相對時間時間
+4. 時區轉換
+5. 支持多語系
+
+官網：https://momentjs.com/
+
+對於日期時間的處理，Moment.js 幾乎都可以滿足
+
+## Lodash
+
+在用 javascript 做資料處理，Lodash 可以幫我們省去很多時間。
+
+官網：https://lodash.com/
+
+## Apache ECharts
+
+這是一個開源的繪圖工具，當做數據分析時，需要圖表統計時，ECharts 是不錯的選擇
+
+官網：https://echarts.apache.org/
