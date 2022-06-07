@@ -1,43 +1,58 @@
 <template>
     <div class="carousel">
-        <swiper class="swiper" :options="swiperOption">
-            <swiper-slide class="first-swiper">
-                <h1 class="title">{{ this.$nuxt.$options.head.title }}</h1>
-                <div class="item-content">
-                    <span>軟體分享</span>
-                    <span>程式設計</span>
-                    <span>技術探討</span>
-                </div>
-            </swiper-slide>
-            <swiper-slide
-                v-for="(item, index) in categories"
-                :key="index"
-                class="w-full h-80"
-            >
-                <nuxt-link :to="item.path">
+        <swiper class="swiper" :option="swiperOption">
+            <swiper-slide>
+                <div class="relative w-full">
+                    <img
+                        src="/images/slider/light-my-swiper-bg.png"
+                        class="w-full object-center object-cover"
+                    />
                     <div
-                        class="w-full h-80"
-                        :style="{
-                            'background-image': 'url(' + item.src + ')',
-                            'background-position': 'center center',
-                            'background-repeat': 'no-repeat',
-                            'background-size': 'cover ',
-                        }"
+                        class="
+                            absolute
+                            w-full
+                            z-10
+                            top-0
+                            inset-y-20
+                            text-center
+                        "
                     >
                         <div class="lg:container mx-auto pt-10">
-                            <div
-                                class="
-                                    bg-[rgba(255,255,255,0.3)]
-                                    p-5
-                                    text-gray-900
-                                    backdrop-blur-sm
-                                "
-                            >
-                                <div class="text-2xl">
-                                    {{ item.title }}
-                                </div>
-                                <div class="text-md">
-                                    <nuxt-content :document="item" />
+                            <h1 class="text-3xl">
+                                {{ this.$nuxt.$options.head.title }}
+                            </h1>
+                            <div class="text-md">
+                                <span>軟體分享</span>
+                                <span>程式設計</span>
+                                <span>技術探討</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide v-for="(item, index) in categories" :key="index">
+                <nuxt-link :to="item.path">
+                    <div>
+                        <img
+                            :src="item.src"
+                            class="w-full object-center object-cover"
+                        />
+                        <div>
+                            <div class="lg:container mx-auto pt-10">
+                                <div
+                                    class="
+                                        bg-[rgba(255,255,255,0.3)]
+                                        p-5
+                                        text-gray-900
+                                        backdrop-blur-sm
+                                    "
+                                >
+                                    <div class="text-2xl">
+                                        {{ item.title }}
+                                    </div>
+                                    <div class="text-md">
+                                        <nuxt-content :document="item" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -79,6 +94,7 @@ export default {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
+                autoHeight: true,
             },
         }
     },
