@@ -1,7 +1,7 @@
 ---
 title: 2022 前端常用的套件與工具
 summary: 這裡收集了我開發前端時，常用的套件與工具
-image: /images/articles/2022-04-10-mas-os-tool/cover.png
+image: /images/articles/2022-06-03-frontend-tool/cover.png
 status: true
 category: frontend
 tags:
