@@ -39,6 +39,7 @@ export default {
     css: [
         { src: '~/assets/scss/index.scss', lang: 'scss' },
         { src: '~/assets/scss/nuxt-content.scss', lang: 'scss' },
+        { src: '@fortawesome/fontawesome-svg-core/styles.css', lang: 'css' },
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -48,6 +49,8 @@ export default {
         { src: '~/plugins/carousel', ssr: false },
 
         { src: '~/plugins/disqus', ssr: true },
+
+        { src: '~/plugins/fontawesome.js', ssr: false },
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -95,6 +98,6 @@ export default {
     robots: {
         UserAgent: '*',
         Allow: '/',
-        Sitemap: 'https://allenplay.net/sitemap.xml'
-    }
+        Sitemap: 'https://allenplay.net/sitemap.xml',
+    },
 }

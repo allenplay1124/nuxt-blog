@@ -22,14 +22,23 @@
                         <hr class="my-5" />
 
                         <div class="mb-10 mt-3 dark:text-gray-50">
-                            📅 &nbsp;&nbsp;
+                            <font-awesome-icon
+                                :icon="['fas', 'fa-calendar-alt']"
+                            />
+                            &nbsp;&nbsp;
 
                             {{
                                 postData.createdAt
                                     .substring(0, 19)
                                     .replace('T', ' ')
                             }}
-                            &nbsp;&nbsp; 📂 &nbsp;&nbsp;
+                            &nbsp;&nbsp;
+
+                            <font-awesome-icon
+                                :icon="['fas', 'fa-folder-open']"
+                            />
+
+                            &nbsp;&nbsp;
 
                             <nuxt-link :to="postData.category.path">
                                 {{ postData.category.title }}

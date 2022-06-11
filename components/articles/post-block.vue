@@ -35,11 +35,17 @@
             </nuxt-link>
 
             <div class="mb-10 mt-3 dark:text-gray-50">
-                📅 &nbsp;&nbsp;
+                <font-awesome-icon :icon="['fas', 'fa-calendar-alt']" />
+
+                &nbsp;&nbsp;
 
                 {{ post.createdAt.substring(0, 19).replace('T', ' ') }}
 
-                &nbsp;&nbsp; 📂 &nbsp;&nbsp;
+                &nbsp;&nbsp;
+
+                <font-awesome-icon :icon="['fas', 'fa-folder-open']" />
+
+                &nbsp;&nbsp;
 
                 <nuxt-link :to="post.category.path">
                     {{ post.category.title }}
