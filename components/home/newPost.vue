@@ -77,7 +77,7 @@
 
                         &nbsp;&nbsp;
 
-                        {{ item.createdAt.substring(0, 10) }}
+                        {{ item.publishDate.substring(0, 10) }}
                     </div>
                     <div class="px-5 py-5">
                         <nuxt-link :to="'/articles/' + item.slug">

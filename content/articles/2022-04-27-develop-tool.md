@@ -5,7 +5,8 @@ image: /images/articles/2022-04-27-develop-tool/cover.png
 status: true
 category: software
 tags:
-  - software
+    - software
+publishDate: 2022-04-27 22:51:03
 ---
 
 ## Docker
@@ -16,25 +17,25 @@ tags:
 
 ## Laradock
 
-這應該在 Docker 上最完整的 PHP 開發環境。支持各版本 PHP 切換，支援主流資料庫，如 MySQL、Postgres、MariaDB及各種常用伺服器服務。
+這應該在 Docker 上最完整的 PHP 開發環境。支持各版本 PHP 切換，支援主流資料庫，如 MySQL、Postgres、MariaDB 及各種常用伺服器服務。
 
 官網： [https://laradock.io/](https://laradock.io/)
 
 ## Visual Studio Code
 
-微軟開發的開源文字編器，相當受社群歡迎，支援 Windows、MacOS、Linux 三大主流作業系統。另外有各種插件可使用，功能不輸需要付費的IDE。
+微軟開發的開源文字編器，相當受社群歡迎，支援 Windows、MacOS、Linux 三大主流作業系統。另外有各種插件可使用，功能不輸需要付費的 IDE。
 
 官網：[Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
 
 ## Postman
 
-相當知名的 Rest API 測試工具，支援各種API認證、常用的 http method，及常用 Http 的 Authorizing
+相當知名的 Rest API 測試工具，支援各種 API 認證、常用的 http method，及常用 Http 的 Authorizing
 
 官網：[Postman API Platform | Sign Up for Free](https://www.postman.com/)
 
 ## Git
 
-是一個免費且開源的版控軟體，是目前最主流的版控軟體，支援MacOS、Ｗindows、Linux多平台
+是一個免費且開源的版控軟體，是目前最主流的版控軟體，支援 MacOS、Ｗ indows、Linux 多平台
 
 官網：[Git (git-scm.com)](https://git-scm.com/)
 
@@ -46,6 +47,6 @@ Git 知名的原始碼代管服務平台，所發行 Git GUI 免費軟體，目�
 
 ## zsh Command Line + oh my zsh
 
-開發網站時常要用到 Command Line，雖然 `MacOS` 和 `Linux` 都支援 `bash`，但更喜歡 zsh + oh my zsh 各種插件，針對 git 優化，指令提醒功能，甚致可以顯示CPU、記憶體使用量等潮到爆的功能，你也可自訂佈景，讓你的 Command Line 呈現簡約風格。
+開發網站時常要用到 Command Line，雖然 `MacOS` 和 `Linux` 都支援 `bash`，但更喜歡 zsh + oh my zsh 各種插件，針對 git 優化，指令提醒功能，甚致可以顯示 CPU、記憶體使用量等潮到爆的功能，你也可自訂佈景，讓你的 Command Line 呈現簡約風格。
 
-官綱：[Oh My zsh官網](https://ohmyz.sh/)
+官綱：[Oh My zsh 官網](https://ohmyz.sh/)

@@ -5,9 +5,10 @@ image: /images/articles/2022-06-03-frontend-tool/cover.png
 status: true
 category: frontend
 tags:
-  - javascript
-  - html
-  - css
+    - javascript
+    - html
+    - css
+publishDate: 2022-06-03 22:48:59
 ---
 
 ## nvm
@@ -33,10 +34,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
+
 然後執行下面指令
 
-- bash：`source ~/.bashrc`
-- zsh: `source ~/.zshrc`
+-   bash：`source ~/.bashrc`
+-   zsh: `source ~/.zshrc`
 
 ## yarn
 
@@ -45,29 +47,30 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 安裝方式：
 
 **使用 npm 安裝**
+
 ```bash
 npm install -g yarn
 ```
-**MacOS安裝**
+
+**MacOS 安裝**
 
 ```bash
 brew install yarn
 ```
 
-**Ubuntu安裝**
+**Ubuntu 安裝**
 
 ```bash
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -  
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
-sudo apt-get update && sudo apt-get install yarn 
+sudo apt-get update && sudo apt-get install yarn
 ```
 
 ## Nuxt.js
 
-是一個混合式 Vue 框架，支援 **服務器渲染(SSR)**、**生成靜態頁面**或是**單頁應用程式(SPA)**，並優化了SEO，也支援 TypeScript。
+是一個混合式 Vue 框架，支援 **服務器渲染(SSR)**、**生成靜態頁面**或是**單頁應用程式(SPA)**，並優化了 SEO，也支援 TypeScript。
 
 官網：https://nuxtjs.org/
-
 
 ## tailwindcss
 
@@ -95,7 +98,7 @@ sudo apt-get update && sudo apt-get install yarn
 
 ## Moment.js
 
-是一個專門處理日期與時間的Library，功能包含了：
+是一個專門處理日期與時間的 Library，功能包含了：
 
 1. 日期時間格式化
 2. 日期時間相減運算
