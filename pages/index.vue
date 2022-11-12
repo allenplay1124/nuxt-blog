@@ -25,12 +25,14 @@ export default {
                 'image',
                 'slug',
                 'category',
+                'publishDate',
             ])
-            .sortBy('createdAt', 'desc')
+            .sortBy('publishDate', 'desc')
             .limit(8)
             .fetch()
 
         let newPosts = []
+
         for (var item of posts) {
             var post = new Object()
 
@@ -40,6 +42,7 @@ export default {
             post.slug = await item.slug
             post.path = await item.path
             post.createdAt = await item.createdAt
+            post.publishDate = await item.publishDate
 
             post.tags = []
             for (var tag of item.tags) {

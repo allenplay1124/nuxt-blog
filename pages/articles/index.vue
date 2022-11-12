@@ -59,7 +59,7 @@ export default {
     async asyncData({ $content }) {
         const posts = await $content('articles')
             .where({ status: true })
-            .sortBy('createdAt', 'desc')
+            .sortBy('publishDate', 'desc')
             .fetch()
 
         const postLists = []
@@ -72,6 +72,7 @@ export default {
             post.slug = await item.slug
             post.createdAt = await item.createdAt
             post.path = await item.path
+            post.publishDate = await item.publishDate
 
             post.category = await $content('categories', item.category).fetch()
             post.tags = []
