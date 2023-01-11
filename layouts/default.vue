@@ -78,6 +78,15 @@ export default {
             clearInterval(count)
             self.loading = false
         }, 3000)
+
+        var host = process.env.host
+
+        if (
+            window.location.host == host &&
+            windows.location.protocol != 'https:'
+        ) {
+            window.location.protocol = 'https:'
+        }
     },
     methods: {
         setRotationOnClick() {

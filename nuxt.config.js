@@ -33,6 +33,7 @@ export default {
 
     env: {
         title: '艾玩不累格',
+        host: 'allenplay.net',
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
