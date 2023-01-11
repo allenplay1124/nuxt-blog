@@ -83,7 +83,7 @@ export default {
 
         if (
             window.location.host == host &&
-            windows.location.protocol != 'https:'
+            window.location.protocol != 'https:'
         ) {
             window.location.protocol = 'https:'
         }
