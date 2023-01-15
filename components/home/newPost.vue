@@ -77,7 +77,7 @@
 
                         &nbsp;&nbsp;
 
-                        {{ item.createdAt.substring(0, 10) }}
+                        {{ item.pubDate | dateFormat }}
                     </div>
                     <div class="px-5 py-5">
                         <nuxt-link :to="'/articles/' + item.slug">
@@ -152,5 +152,10 @@
 <script>
 export default {
     props: ['newPosts'],
+    filters: {
+        dateFormat(value) {
+            return value.substring(0, 10)
+        },
+    },
 }
 </script>

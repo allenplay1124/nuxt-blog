@@ -52,7 +52,7 @@ export default {
     async asyncData({ $content, params }) {
         const posts = await $content('articles')
             .where({ category: params.slug })
-            .sortBy('createdAt', 'desc')
+            .sortBy('pubDate', 'desc')
             .fetch()
 
         const category = await $content('categories', params.slug).fetch()
@@ -66,6 +66,7 @@ export default {
             post.image = await item.image
             post.slug = await item.slug
             post.createdAt = await item.createdAt
+            post.pubDate = await item.pubDate
             post.path = await item.path
             post.category = await $content('categories', item.category).fetch()
             post.tags = []

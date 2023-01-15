@@ -27,11 +27,8 @@
                             />
                             &nbsp;&nbsp;
 
-                            {{
-                                postData.createdAt
-                                    .substring(0, 19)
-                                    .replace('T', ' ')
-                            }}
+                            {{ postData.pubDate | dateTimeFormat }}
+
                             &nbsp;&nbsp;
 
                             <font-awesome-icon
@@ -269,7 +266,7 @@ export default {
     async asyncData({ $content, params }) {
         const postData = await $content('articles', params.slug).fetch()
         const [perv, next] = await $content('articles')
-            .sortBy('createdAt', 'asc')
+            .sortBy('pubDate', 'asc')
             .surround(params.slug)
             .fetch()
 
@@ -305,6 +302,11 @@ export default {
             perv,
             next,
         }
+    },
+    fliters: {
+        dateTimeFormat(value) {
+            return value.substring(0, 19).replace('T', ' ')
+        },
     },
     head() {
         return {

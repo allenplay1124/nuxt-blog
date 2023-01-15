@@ -3,12 +3,12 @@ title: 大推！MacOS 上好用軟體集
 summary: 這裡收集了，站長在 MacOS 上常用的軟體
 image: /images/articles/2022-04-10-mas-os-tool/cover.png
 status: true
+pubDate: 2022-04-10
 category: software
 tags:
   - macos
   - software
 ---
-
 ## HomeBrew
 
 MacOS 上的套件管理，類似 **Ubuntu** 上的 `apt` 或是 **CentOS** 上的 `yum`
@@ -16,16 +16,19 @@ MacOS 上的套件管理，類似 **Ubuntu** 上的 `apt` 或是 **CentOS** 上�
 官網：https://brew.sh
 
 安裝方式：
+
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## iTerm2
-雖然MacOS有內建terminal，但`iTerm2`更加強大，再加上`zsh`，真得是開發者必裝軟體
+
+雖然MacOS有內建terminal，但 `iTerm2`更加強大，再加上 `zsh`，真得是開發者必裝軟體
 
 官網：https://iterm2.com/
 
 ## Stats
+
 好用且**免費開源**的硬體監測軟體，可即時監測以下硬體資訊
 
 1. CPU
@@ -46,6 +49,7 @@ brew install --cask stats
 ```
 
 ## Xnip
+
 是 MacOS 上相當好的螢幕截圖，功能如下：
 
 1. 區域截圖
@@ -61,21 +65,25 @@ brew install --cask stats
 App Store：https://apps.apple.com/us/app/xnip/id1221250572?mt=12
 
 ## Couleurs
+
 這是一款簡單免費的螢幕選色器，操作上相當直覺。
 
 官網： https://couleursapp.com/
 
 ## Mos
+
 Apple 觸控板真得很好用，但當你改用滑鼠時，就會讓你感到非常悲劇，那悲催的卡頓感，真得讓人很崩潰，而 **Mos** 就可以改善，滑鼠在MacOS上的使用體驗。
 
 官網：https://mos.caldis.me/
 
 ## AppCleaner
+
 MacOS 在軟體解除安裝，一般是進到 **應用程式** 目錄程式中，直接刪除軟體即可，但必竟每個軟體設計都不同，常常刪除不乾淨，而 `AppCleaner` 就可以很好的解決此問題。
 
 官網：https://freemacsoft.net/appcleaner/
 
 ## IINA
+
 MacOS上強大好用的影音播放器，支援大部分的影音格式播放，不用在額外安裝各種編碼器，這個播放器一個搞定。
 
 官網：https://iina.io/
@@ -95,16 +103,16 @@ brew install --cask hiddenbar
 ```
 
 ## Visual Studio Code
+
 目前在程式開發上，站長使用的程式碼編輯器，擁有各類插件，可以加快開發速度。
 
 官網：https://code.visualstudio.com/
 
-
 ## TextMate
+
 雖雖 vscode 很強大，但有時讓人覺得有點肥大，若只是臨時要編輯文字檔，我會用這款輕量編輯器
 
 官網：https://macromates.com/
-
 
 ## KeKa 壓縮軟體
 

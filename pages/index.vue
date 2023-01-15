@@ -20,13 +20,14 @@ export default {
             .only([
                 'title',
                 'createdAt',
+                'pubDate',
                 'summary',
                 'tags',
                 'image',
                 'slug',
                 'category',
             ])
-            .sortBy('createdAt', 'desc')
+            .sortBy('pubDate', 'desc')
             .limit(8)
             .fetch()
 
@@ -39,7 +40,7 @@ export default {
             post.image = await item.image
             post.slug = await item.slug
             post.path = await item.path
-            post.createdAt = await item.createdAt
+            post.pubDate = await item.pubDate
 
             post.tags = []
             for (var tag of item.tags) {

@@ -3,13 +3,13 @@ title: 2022 前端常用的套件與工具
 summary: 這裡收集了我開發前端時，常用的套件與工具
 image: /images/articles/2022-06-03-frontend-tool/cover.png
 status: true
+pubDate: 2022-05-28
 category: frontend
 tags:
   - javascript
   - html
   - css
 ---
-
 ## nvm
 
 NVM 是 Node Version Manager 的縮寫，主要功能就可以快速切換 Node.js 版本。
@@ -33,6 +33,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
+
 然後執行下面指令
 
 - bash：`source ~/.bashrc`
@@ -45,9 +46,11 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 安裝方式：
 
 **使用 npm 安裝**
+
 ```bash
 npm install -g yarn
 ```
+
 **MacOS安裝**
 
 ```bash
@@ -67,7 +70,6 @@ sudo apt-get update && sudo apt-get install yarn
 是一個混合式 Vue 框架，支援 **服務器渲染(SSR)**、**生成靜態頁面**或是**單頁應用程式(SPA)**，並優化了SEO，也支援 TypeScript。
 
 官網：https://nuxtjs.org/
-
 
 ## tailwindcss
 

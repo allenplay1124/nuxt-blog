@@ -54,7 +54,7 @@ export default {
             .where({
                 tags: { $contains: params.slug },
             })
-            .sortBy('createdAt', 'desc')
+            .sortBy('pubDate', 'desc')
             .fetch()
 
         const tagInfo = await $content('tags', params.slug).fetch()
@@ -68,6 +68,7 @@ export default {
             post.image = await item.image
             post.slug = await item.slug
             post.createdAt = await item.createdAt
+            post.pubDate = await item.pubDate
             post.path = await item.path
 
             post.category = await $content('categories', item.category).fetch()

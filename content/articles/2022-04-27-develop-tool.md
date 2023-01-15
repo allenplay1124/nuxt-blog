@@ -3,11 +3,11 @@ title: 開發環境工具介紹-環境篇
 summary: 記錄自已在網站開發時，常用的工具
 image: /images/articles/2022-04-27-develop-tool/cover.png
 status: true
+pubDate: 2022-04-27
 category: software
 tags:
   - software
 ---
-
 ## Docker
 
 有別於傳統虛擬機以作業系統為中心，Docker 則是以應用程式為中心，在達成虛擬化，並不需要完整載入完整的 Guest OS，而只要啟用應用層級程式及相關函式，因此其優勢，不需完整安裝 Guest OS 節省硬碟資源，另外啟用速度快，也是其最大優勢。

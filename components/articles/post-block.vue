@@ -39,7 +39,7 @@
 
                 &nbsp;&nbsp;
 
-                {{ post.createdAt.substring(0, 19).replace('T', ' ') }}
+                {{ post.pubDate.substring(0, 19).replace('T', ' ') }}
 
                 &nbsp;&nbsp;
 
