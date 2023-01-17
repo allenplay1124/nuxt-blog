@@ -27,7 +27,11 @@
                             />
                             &nbsp;&nbsp;
 
-                            {{ postData.pubDate | dateTimeFormat }}
+                            {{
+                                postData.pubDate
+                                    .substring(0, 19)
+                                    .replace('T', ' ')
+                            }}
 
                             &nbsp;&nbsp;
 
@@ -302,11 +306,6 @@ export default {
             perv,
             next,
         }
-    },
-    fliters: {
-        dateTimeFormat(value) {
-            return value.substring(0, 19).replace('T', ' ')
-        },
     },
     head() {
         return {
