@@ -15,7 +15,7 @@
         </h2>
         <div class="py-8">
             <span v-for="(item, index) in tags" :key="index">
-                <nuxt-link :to="item.path" class="p-2 m-1 rounded shadow tag">
+                <nuxt-link :to="item.path" class="p-2 m-3 inline-block rounded shadow tag">
                     {{ item.title }}
                 </nuxt-link>
             </span>
