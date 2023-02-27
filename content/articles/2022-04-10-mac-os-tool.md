@@ -121,3 +121,28 @@ brew install --cask hiddenbar
 在以往直接在 MacOS 打包壓縮的檔案，在 Windows 環境下打開，總會多出一些讓使用者迷惑的檔案，而這個功能就會幫忙先排除這檔案。
 
 官網：https://www.keka.io/
+
+## Shottr
+
+另一款螢幕截圖軟體，除了一般截圖功能、馬賽克、OCR、釘圖、螢幕選色器 等功能。
+
+官網：https://shottr.cc/
+
+## BetterDisplay
+
+MacOS 對於外接螢幕，相當不友善，無法用熱健去控制外接螢幕的亮度和音量，而 BetterDisplay 則可以解決這些問題。
+
+官網：https://github.com/waydabber/BetterDisplay
+
+## UTM
+
+支援 M1 晶片的虛擬機，除了以接近本機的速度在Apple Silicon上運行ARM64操作系統，在英特爾 Mac 上，x86/x64 作業系統可以虛擬化。
+
+網址：https://mac.getutm.app/
+
+
+## Raycast
+
+一款能大幅提升你工作效率的 Mac 軟體，可以取代 Spotlight，且功能更加狂大。
+
+網址：https://www.raycast.com/
