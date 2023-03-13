@@ -46,6 +46,10 @@
                             </nuxt-link>
                         </div>
 
+                        <div>
+                          <share />
+                        </div>
+
                         <img
                             class="w-full shadow-md rounded object-cover m-auto"
                             :src="postData.image"
@@ -199,7 +203,9 @@
                                 </li>
                             </ul>
                         </div>
-
+                        <div>
+                          <share />
+                        </div>
                         <div class="mt-5">
                             <Disqus />
                         </div>
@@ -262,10 +268,11 @@
 
 <script>
 import Footbar from '~/components/home/footbar'
-
+import share from '~/components/articles/share'
 export default {
     components: {
         Footbar,
+        share
     },
     async asyncData({ $content, params }) {
         const postData = await $content('articles', params.slug).fetch()
