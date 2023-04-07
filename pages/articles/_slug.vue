@@ -100,7 +100,10 @@
                                                 item, index
                                             ) in postData.toc"
                                             :key="index"
-                                            class="py-2"
+                                            class="py-2 hover:border-gray-500"
+                                            :style="{
+                                              'padding-left': item.depth * 10 + 'px'
+                                            }"
                                         >
                                             <nuxt-link
                                                 :to="`#${item.id}`"
@@ -241,6 +244,9 @@
                                             v-for="item in postData.toc"
                                             :key="item.id"
                                             class="py-2 hover:border-gray-500"
+                                            :style="{
+                                              'padding-left': item.depth * 10 + 'px'
+                                            }"
                                         >
                                             <a
                                                 :href="`#${item.id}`"
@@ -283,9 +289,28 @@ export default {
 
         var md5 = require('md5')
         for (var index in postData.body.children) {
+
             if (postData.body.children[index].tag == 'h2') {
                 postData.body.children[index].props.id = md5(
                     postData.body.children[index].props.id
+                )
+            }
+
+            if (postData.body.children[index].tag == 'h3') {
+                postData.body.children[index].props.id = md5(
+                  postData.body.children[index].props.id
+                )
+            }
+
+            if (postData.body.children[index].tag == 'h4') {
+                postData.body.children[index].props.id = md5(
+                  postData.body.children[index].props.id
+                )
+            }
+
+            if (postData.body.children[index].tag == 'h5') {
+                postData.body.children[index].props.id = md5(
+                  postData.body.children[index].props.id
                 )
             }
         }
