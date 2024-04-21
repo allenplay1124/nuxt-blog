@@ -1,7 +1,7 @@
 ---
 title: 【PHP】如何利用 nesbot/carbon 處理日期和時間
 summary: PHP語言在處理日期和時間時，Carbon 套件是一個非常有用的工具。Carbon 套件繼承了原生的 Datetime，並新增了許多語意化的行為，讓處理時間的難度降低許多。在這篇教學中，將會介紹 Carbon 套件的基本使用方法，以及如何在 PHP 中使用 Carbon 套件來處理日期和時間。
-image: /images/articles/2023-02-26-go-lang-setup/cover.png
+image: /images/articles/2023-10-04-php-carbon/cover.png
 status: true
 pubDate: 2023-10-04 18:34:00
 category: pragram
@@ -27,6 +27,10 @@ use Carbon\Carbon;
 printf("Now: %s", Carbon::now());
 ```
 
+## 日期格式化
+
+* `format($value)`：將日期時間進行格式化輸出，其中格式
+
 ## 取得與調整時間
 
 * `now()`：獲得當前的日期與時間
@@ -49,7 +53,7 @@ use Carbon\Carbon;
 /**
  * ：獲得當前的日期與時間
  */
-echo Carbon::now()->format("Y-m-d H:i:s");
+echo Carbon::now();
 
 //印出結果：2023-10-25 07:12:30
 
