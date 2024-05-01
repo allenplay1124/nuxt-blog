@@ -14,10 +14,6 @@ export default {
         htmlAttrs: {
             lang: 'zh-Hant-TW',
         },
-        script: [{
-          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7267777415172382',
-          crossorigin: 'anonymous'
-        }],
         meta: [
             { charset: 'utf-8' },
             {
