@@ -1,16 +1,26 @@
 <template>
-    <div>
-        <header>
-            <topBar></topBar>
-            <navbar></navbar>
-        </header>
-        <transition name="fade">
-            <div class="loading-wrapper" v-show="loading">
-                <div class="loading" :class="loadingClass">玩</div>
+    <html {{ HTML_ATTRS }}>
+        <head {{ HEAD_ATTRS }}>
+            {{ HEA }}
+            <!-- load Outdooractive Javascript API -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7267777415172382"
+     crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div>
+                <header>
+                    <topBar></topBar>
+                    <navbar></navbar>
+                </header>
+                <transition name="fade">
+                    <div class="loading-wrapper" v-show="loading">
+                        <div class="loading" :class="loadingClass">玩</div>
+                    </div>
+                </transition>
+                <Nuxt />
             </div>
-        </transition>
-        <Nuxt />
-    </div>
+        </body>
+    </html>
 </template>
 
 <script>
